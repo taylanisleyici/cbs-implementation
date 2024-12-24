@@ -14,8 +14,3 @@ CBSConstraint::CBSConstraint(int agent, std::pair<int, int> location, int time)
     this->location = location;
     this->time = time;
 }
-
-int CBSConstraint::getTime() const
-{
-    return time;
-}

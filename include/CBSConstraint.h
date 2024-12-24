@@ -10,7 +10,15 @@ class CBSConstraint
   public:
     CBSConstraint();
     CBSConstraint(int agent, std::pair<int, int> location, int time);
-    inline int getTime() const;
+    inline int getTime() const{
+        return time;
+    };
+    inline std::pair<int, int> getLocation() const{
+        return location;
+    };
+    inline int getAgent() const{
+        return agent;
+    };
     ~CBSConstraint() = default;
 
   private:

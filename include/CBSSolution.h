@@ -10,8 +10,16 @@ class CBSSolution
   public:
     CBSSolution();
     ~CBSSolution() = default;
-  private:
     std::vector<std::shared_ptr<CBSPath>> paths; // paths[i] is the path of agent i
+    inline long int getCost() const {
+        return cost;
+    };
+
+    inline void setCost(long int cost) {
+        this->cost = cost;
+    };
+  private:
+    long int cost;
 };
 
 #endif
